@@ -1,0 +1,17 @@
+{
+  "name": "4_7_TypeScriptParcel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "parcel ./src/index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^1.12.4",
+    "tsc": "^1.20150623.0",
+    "typescript": "^3.9.3"
+  }
+}
