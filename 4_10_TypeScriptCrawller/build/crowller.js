@@ -40,7 +40,6 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var superagent_1 = __importDefault(require("superagent"));
-var zytAnalyzer_1 = __importDefault(require("./zytAnalyzer"));
 var path_1 = __importDefault(require("path"));
 var fs_1 = __importDefault(require("fs"));
 var Crowller = /** @class */ (function () {
@@ -87,9 +86,6 @@ var Crowller = /** @class */ (function () {
     };
     return Crowller;
 }());
+exports.default = Crowller;
 // 方法类实例化，使用实例化对象中的方法
-var secret = "secretKey";
-var url = "http://www.dell-lee.com/typescript/demo.html?secret=" + secret;
-var analyzer = zytAnalyzer_1.default.getInstance();
-new Crowller(analyzer, url);
 console.log(1);
