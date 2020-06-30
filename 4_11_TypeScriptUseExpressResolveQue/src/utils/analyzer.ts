@@ -1,6 +1,6 @@
 import fs from 'fs';
 import cheerio from 'cheerio';
-import { Analyzer } from './crowller';
+import { AnalyzerInter } from './crowller';
 
 interface Course {
   title: string;
@@ -16,14 +16,14 @@ interface Content {
   [propName: number]: Course[];
 }
 
-export default class ZytAnalyzer implements Analyzer {
-  private static instance: ZytAnalyzer;
+export default class Analyzer implements AnalyzerInter {
+  private static instance: Analyzer;
 
   static getInstance() {
-    if (!ZytAnalyzer.instance) {
-      ZytAnalyzer.instance = new ZytAnalyzer();
+    if (!Analyzer.instance) {
+      Analyzer.instance = new Analyzer();
     }
-    return ZytAnalyzer.instance;
+    return Analyzer.instance;
   }
 
   private getCourseInfo(html: string) {

@@ -2,12 +2,12 @@ import fs from 'fs';
 import path from 'path';
 import superagent from 'superagent';
 
-export interface Analyzer {
+export interface AnalyzerInter {
   analyze: (html: string, filePath: string) => string;
 }
 
 class Crowller {
-  private filePath = path.resolve(__dirname, '../data/course.json');
+  private filePath = path.resolve(__dirname, '../../data/course.json');
 
   private async getRawHtml() {
     const result = await superagent.get(this.url);
@@ -24,7 +24,7 @@ class Crowller {
     this.writeFile(fileContent);
   }
 
-  constructor(private url: string, private analyzer: Analyzer) {
+  constructor(private url: string, private analyzer: AnalyzerInter) {
     this.initSpiderProcess();
   }
 }
