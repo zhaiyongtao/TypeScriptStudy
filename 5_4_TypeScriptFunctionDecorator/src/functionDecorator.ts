@@ -11,6 +11,7 @@ function getNameDecorator (target:any, key: string,descriptor: PropertyDescripto
     console.log('target',target)
     console.log('key',key)
     // descriptor.writable = false
+    console.info(descriptor)
     descriptor.value = () => {
         console.log('descriptor.value')
     }
