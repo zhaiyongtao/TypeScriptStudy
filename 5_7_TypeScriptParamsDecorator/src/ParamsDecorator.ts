@@ -7,10 +7,10 @@
  * @Copyright: Copyright (c) 2020, Hand
  */
 
-function paramsDecorator (target: any, method: any, paramIndx: number):any {
+function paramsDecorator (target: any, method: any, paramIndex: number):any {
     console.info('target', target);
     console.info('method', method);
-    console.info('paramIndx', paramIndx);
+    console.info('paramIndx', paramIndex);
 }
 
 class AttributeDecorator {
