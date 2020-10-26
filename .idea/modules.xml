@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/TypeScriptStudy.iml" filepath="$PROJECT_DIR$/.idea/TypeScriptStudy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../react-typescript-practice/.idea/react-typescript-practice.iml" filepath="$PROJECT_DIR$/../react-typescript-practice/.idea/react-typescript-practice.iml" />
     </modules>
   </component>
 </project>
